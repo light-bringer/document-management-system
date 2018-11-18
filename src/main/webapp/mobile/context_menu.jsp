@@ -10,7 +10,8 @@
   <title>OpenKM Mobile</title>
   <link rel="apple-touch-icon" href="img/condor.jpg" />
   <link rel="stylesheet" href="../css/jquery.mobile-1.2.0.min.css" />
-  <script src="../js/jquery-1.11.3.min.js"></script>
+  <!-- Jquery mobile requires jquery min 1.8.3 for running, it does not work with upper version -->
+  <script src="../js/jquery-1.8.3.min.js"></script>
   <script src="../js/jquery.mobile-1.2.0.min.js"></script>
 </head>
 <body>
