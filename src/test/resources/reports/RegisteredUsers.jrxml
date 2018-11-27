@@ -10,8 +10,8 @@
 	<import value="net.sf.jasperreports.engine.data.*"/>
 	<parameter name="host" class="java.lang.String"/>
 	<queryString>
-		<![CDATA[import com.openkm.dao.*;
-import com.openkm.dao.bean.*;
+		<![CDATA[import com.ezdms.dao.*;
+import com.ezdms.dao.bean.*;
 
 List al = new ArrayList();
 for (User user : AuthDAO.findAllUsers(false)) {

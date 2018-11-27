@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
                                    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.openkm.dao.bean.MailAccount" table="OKM_MAIL_ACCOUNT">
+  <class name="com.ezdms.dao.bean.MailAccount" table="OKM_MAIL_ACCOUNT">
     <id name="id" column="MA_ID"><generator class="native"/></id>
     <property name="user" column="MA_USER" not-null="true" length="64"/>
     <property name="mailProtocol" column="MA_MPROTOCOL" not-null="true"/>
@@ -16,11 +16,11 @@
     <property name="active" column="MA_ACTIVE" type="true_false" not-null="true"/>
     <set name="mailFilters" table="OKM_MAIL_FILTER" order-by="MF_ID asc" cascade="all-delete-orphan" lazy="false">
       <key column="MF_MAIL_ACCOUNT" not-null="true"/>
-      <one-to-many class="com.openkm.dao.bean.MailFilter"/>
+      <one-to-many class="com.ezdms.dao.bean.MailFilter"/>
     </set>
     <set name="mailImportErrors" table="OKM_MAIL_IMPORT_ERROR" cascade="all-delete-orphan" lazy="false">
       <key column="MIE_MAIL_ACCOUNT" not-null="true"/>
-      <one-to-many class="com.openkm.dao.bean.MailImportError"/>
+      <one-to-many class="com.ezdms.dao.bean.MailImportError"/>
     </set>
   </class>
 </hibernate-mapping>

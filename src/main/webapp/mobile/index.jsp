@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.openkm.core.HttpSessionManager" %>
+<%@ page import="com.ezdms.core.HttpSessionManager" %>
 <%@ page errorPage="error.jsp" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
 	HttpSessionManager.getInstance().add(request);
-	com.openkm.api.OKMAuth.getInstance().login();
+	com.ezdms.api.OKMAuth.getInstance().login();
 %>
 <c:choose>
   <c:when test="${not empty param.uuid}">

@@ -1,5 +1,5 @@
 /**
- *  OpenKM, Open Document Management System (http://www.openkm.com)
+ *  ezDMS, Open Document Management System (http://www.ezdms.com)
  *  Copyright (c) 2006-2017  Paco Avila & Josep Llort
  *
  *  No bytes were intentionally harmed during the development of this application.
@@ -19,10 +19,10 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-package com.openkm.misc;
+package com.ezdms.misc;
 
-import com.openkm.core.Cron;
-import com.openkm.util.ExecutionUtils;
+import com.ezdms.core.Cron;
+import com.ezdms.util.ExecutionUtils;
 import junit.framework.TestCase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

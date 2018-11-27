@@ -10,10 +10,10 @@
 	<import value="net.sf.jasperreports.engine.data.*"/>
 	<parameter name="host" class="java.lang.String"/>
 	<queryString>
-		<![CDATA[import com.openkm.api.OKMSearch;
-import com.openkm.bean.QueryResult;
-import com.openkm.dao.bean.QueryParams;
-import com.openkm.bean.Document;
+		<![CDATA[import com.ezdms.api.OKMSearch;
+import com.ezdms.bean.QueryResult;
+import com.ezdms.dao.bean.QueryParams;
+import com.ezdms.bean.Document;
 
 int COLS = 10;
 
@@ -105,7 +105,7 @@ return al]]>
 		<band height="44" splitType="Stretch">
 			<image>
 				<reportElement key="image-1" x="631" y="0" width="150" height="35"/>
-				<imageExpression class="java.lang.String"><![CDATA["http://localhost:8080/OpenKM/logo/report"]]></imageExpression>
+				<imageExpression class="java.lang.String"><![CDATA["http://localhost:8080/ezDMS/logo/report"]]></imageExpression>
 			</image>
 			<textField pattern="yyyy/MM/dd" isBlankWhenNull="false">
 				<reportElement key="textField-13" x="0" y="0" width="65" height="10" forecolor="#010101"/>

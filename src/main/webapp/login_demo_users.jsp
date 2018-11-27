@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.openkm.bean.HttpSessionInfo" %>
-<%@ page import="com.openkm.core.HttpSessionManager" %>
-<%@ page import="com.openkm.util.FormatUtil" %>
+<%@ page import="com.ezdms.bean.HttpSessionInfo" %>
+<%@ page import="com.ezdms.core.HttpSessionManager" %>
+<%@ page import="com.ezdms.util.FormatUtil" %>
 <%@ page import="java.util.Iterator" %>
 <table border="0" cellpadding="2" cellspacing="0" align="center" class="demo">
     <%
@@ -10,7 +10,7 @@
   out.println("This demo is available for testing purposes.");
   out.println("These documents can be removed at any time,");
   out.println("so don't expect your document to be here tomorrow.<br><br>");
-  out.println("Please, report any issue on this site to <a href=\"http://twitter.com/openkm\">@openkm</a>.");
+  out.println("Please, report any issue on this site to <a href=\"http://twitter.com/ezdms\">@ezdms</a>.");
   out.println("</td></tr>");
   out.println("<tr><td class=\"demo_title\">- LOGGED USERS -</td></tr>");
   out.println("<tr><td>");
@@ -33,7 +33,7 @@
 
   out.println("</td></tr>");
   out.println("<tr><td class=\"demo_title\">- AVAILABLE DEMO USERS -</td></tr>");
-  out.println("<tr><td><b>If you need you own private demo, please <a href=\"https://www.openkm.com/en/contact.html\">contact us</a>.</b></td></tr>");
+  out.println("<tr><td><b>If you need you own private demo, please <a href=\"https://www.ezdms.com/en/contact.html\">contact us</a>.</b></td></tr>");
   out.println("<tr><td>");
   out.println("<table class=\"demo_list\" align=\"center\">");
   out.println("<tr><th>User</th><th>Password</th></tr>");

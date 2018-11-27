@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="bsh.TargetError" %>
-<%@ page import="com.openkm.frontend.client.OKMException" %>
-<%@ page import="com.openkm.util.FormatUtil" %>
+<%@ page import="com.ezdms.frontend.client.OKMException" %>
+<%@ page import="com.ezdms.util.FormatUtil" %>
 <%@ page isErrorPage="true" %>
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -14,7 +14,7 @@
   <% } else { %>
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/desktop.css" type="text/css" />
   <% } %>
-  <title>OpenKM Error</title>
+  <title>ezDMS Error</title>
 </head>
 <body style="background-color: #f6f6ee;">
   <table border="0" width="100%" align="center" style="padding-top: 150px">

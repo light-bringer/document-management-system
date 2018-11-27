@@ -1,5 +1,5 @@
 /**
- *  OpenKM, Open Document Management System (http://www.openkm.com)
+ *  ezDMS, Open Document Management System (http://www.ezdms.com)
  *  Copyright (c) 2006-2017  Paco Avila & Josep Llort
  *
  *  No bytes were intentionally harmed during the development of this application.
@@ -19,12 +19,12 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-package com.openkm.misc;
+package com.ezdms.misc;
 
 import com.lowagie.text.DocumentException;
-import com.openkm.util.OOUtils;
-import com.openkm.util.PDFUtils;
-import com.openkm.util.TemplateUtils;
+import com.ezdms.util.OOUtils;
+import com.ezdms.util.PDFUtils;
+import com.ezdms.util.TemplateUtils;
 import freemarker.template.TemplateException;
 import junit.framework.TestCase;
 import net.sf.jooreports.templates.DocumentTemplateException;

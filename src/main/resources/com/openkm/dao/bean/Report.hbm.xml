@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
                                    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.openkm.dao.bean.Report" table="OKM_REPORT">
+  <class name="com.ezdms.dao.bean.Report" table="OKM_REPORT">
     <id name="id" column="RP_ID"><generator class="native"/></id>
     <property name="name" column="RP_NAME" not-null="true"/>
     <property name="fileContent" column="RP_FILE_CONTENT" type="text" not-null="true"/>

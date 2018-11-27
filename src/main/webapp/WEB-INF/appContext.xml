@@ -13,15 +13,15 @@
                                  http://www.springframework.org/schema/jee
                                  http://www.springframework.org/schema/jee/spring-jee-3.1.xsd">
 
-  <context:component-scan base-package="com.openkm"/>
+  <context:component-scan base-package="com.ezdms"/>
 
-  <!-- OpenKM API -->
+  <!-- ezDMS API -->
   <beans:import resource="soap.xml"/>
   <beans:import resource="rest.xml"/>
   <beans:import resource="cmis.xml"/>
   
   <!-- Swagger -->
-  <beans:bean id="swagger2Feature" class="com.openkm.core.Swagger2Config" />
+  <beans:bean id="swagger2Feature" class="com.ezdms.core.Swagger2Config" />
 
   <!--
   <beans:bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
@@ -132,11 +132,11 @@
   </beans:bean>
 
   <!-- Security access logger -->
-  <beans:bean id="loggerListener" class="com.openkm.spring.LoggerListener"/>
+  <beans:bean id="loggerListener" class="com.ezdms.spring.LoggerListener"/>
 
-  <jee:jndi-lookup id="dataSource" jndi-name="jdbc/OpenKMDS" resource-ref="true"/>
+  <jee:jndi-lookup id="dataSource" jndi-name="jdbc/ezDMSDS" resource-ref="true"/>
 
-  <!-- Security configuration moved to $CATALINA_HOME/OpenKM.xml -->
+  <!-- Security configuration moved to $CATALINA_HOME/ezDMS.xml -->
   <!-- WINFIX
   <security:authentication-manager alias="authenticationManager">
       <security:authentication-provider>

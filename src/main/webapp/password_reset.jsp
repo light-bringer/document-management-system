@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u" %>
-<%@ page import="com.openkm.core.Config" %>
+<%@ taglib uri="http://www.ezdms.com/tags/utils" prefix="u" %>
+<%@ page import="com.ezdms.core.Config" %>
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="OpenKM">
-  <meta name="description" content="OpenKM is an EDRMS EDRMS, Document Management System and Record Management, easily to manage digital content, simplify your workload and yield high efficiency.">
+  <meta name="author" content="ezDMS">
+  <meta name="description" content="ezDMS is an EDRMS EDRMS, Document Management System and Record Management, easily to manage digital content, simplify your workload and yield high efficiency.">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
   <link rel="Shortcut icon" href="<%=request.getContextPath() %>/logo/favicon"/>
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/bootstrap/bootstrap.min.css" type="text/css"/>
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/font-awesome/font-awesome.min.css" type="text/css"/>
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/login.css" type="text/css"/>
-  <title>OpenKM password reset</title>
+  <title>ezDMS password reset</title>
 </head>
 <body onload="document.forms[0].elements[0].focus()">
 <div id="login-background" class="background-zen">
@@ -20,7 +20,7 @@
     <div class="background-zen" style="height:100%;"></div>
   </div>
 </div>
-<u:constantsMap className="com.openkm.core.Config" var="Config"/>
+<u:constantsMap className="com.ezdms.core.Config" var="Config"/>
 <div id="login-container">
   <div class="login-title">
     <img id="login-image" class="img-responsive center-block" src="img/logo_login.gif">
@@ -74,7 +74,7 @@
       <div class="form-group form-footer"
            style="border-bottom-left-radius: 10px !important; border-bottom-right-radius: 10px !important;">
         <div class="col-xs-12 text-center">
-          <p>&copy; 2006-2018 OpenKM. All rights reserved.</p>
+          <p>&copy; 2006-2018 ezDMS. All rights reserved.</p>
         </div>
       </div>
     </form>

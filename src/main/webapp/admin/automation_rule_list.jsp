@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u"%>
-<u:constantsMap className="com.openkm.core.Config" var="Config" />
+<%@ taglib uri="http://www.ezdms.com/tags/utils" prefix="u"%>
+<u:constantsMap className="com.ezdms.core.Config" var="Config" />
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html>

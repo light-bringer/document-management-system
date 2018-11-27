@@ -1,16 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.openkm.core.Config" %>
-<%@ page import="com.openkm.dao.LanguageDAO" %>
-<%@ page import="com.openkm.dao.bean.Language" %>
+<%@ page import="com.ezdms.core.Config" %>
+<%@ page import="com.ezdms.dao.LanguageDAO" %>
+<%@ page import="com.ezdms.dao.bean.Language" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Locale" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u" %>
+<%@ taglib uri="http://www.ezdms.com/tags/utils" prefix="u" %>
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">  
-  <meta name="author" content="OpenKM">
-  <meta content="OpenKM is an EDRMS EDRMS, Document Management System and Record Management, easily to manage digital content, simplify your workload and yield high efficiency." name="description">
+  <meta name="author" content="ezDMS">
+  <meta content="ezDMS is an EDRMS EDRMS, Document Management System and Record Management, easily to manage digital content, simplify your workload and yield high efficiency." name="description">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
   <link rel="Shortcut icon" href="<%=request.getContextPath() %>/logo/favicon" />
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/bootstrap/bootstrap.min.css" type="text/css" />
@@ -27,9 +27,9 @@
         $('#stickerController').show();
 
         // Change div style when sticker is enabled
-        $('#openkmNews').width('<%=Config.RSS_NEWS_BOX_WIDTH %>px');
+        $('#ezdmsNews').width('<%=Config.RSS_NEWS_BOX_WIDTH %>px');
         $('#feedContainer').width('<%=Config.RSS_NEWS_BOX_WIDTH %>px');
-        $('#openkmVersion').addClass("vticket-border-right");
+        $('#ezdmsVersion').addClass("vticket-border-right");
 
         $('#stop').on({
           'click': function () {
@@ -43,14 +43,14 @@
         $('#eye').on({
           'click': function () {
             if ($('#eyeImg').attr('src') === 'img/eye.png') {
-              localStorage.setItem('openkmNews', 'hide');
+              localStorage.setItem('ezdmsNews', 'hide');
               $('#eyeImg').attr('src', 'img/eye-disabled.png');
               $('#feedContainer').hide();
               $('#stop').hide();
               $('#forward').hide();
               $('#backward').hide();
             } else {
-              localStorage.setItem('openkmNews', 'show');
+              localStorage.setItem('ezdmsNews', 'show');
               $('#eyeImg').attr('src', 'img/eye.png');
               $('#feedContainer').show();
               $('#stop').show();
@@ -61,7 +61,7 @@
           }
         });
 
-        if (localStorage.getItem('openkmNews') == 'hide') {
+        if (localStorage.getItem('ezdmsNews') == 'hide') {
           $('#eyeImg').attr('src', 'img/eye-disabled.png');
           $('#feedContainer').hide();
           $('#stop').hide();
@@ -142,10 +142,10 @@
   <title><%=Config.TEXT_TITLE%></title>
 </head>
 <body onload="document.forms[0].elements[0].focus()">
-  <div id="openkmNews" class="openkm-news">
-    <div id="openkmVersion" class="openkm-version">
+  <div id="ezdmsNews" class="ezdms-news">
+    <div id="ezdmsVersion" class="ezdms-version">
       <strong>Community Version</strong>
-      <div id="stickerController" class="openkm-sticker" style="display:none;">
+      <div id="stickerController" class="ezdms-sticker" style="display:none;">
         <a href="#" id="backward" style="cursor:hand !important;"><img src="img/backward.png" alt="Backward" title="Backward" /></a>
         <a href="#" id="stop" style="cursor:hand !important;"><img id="stopImg" src="img/stop.png" alt="Stop" title="Stop"/></a>
         <a href="#" id="forward" style="cursor:hand !important;"><img src="img/forward.png" alt="Forward" title="Forward" /></a>
@@ -160,7 +160,7 @@
       <div class="background-zen" style="height:100%;"></div>
     </div>
   </div>
-  <u:constantsMap className="com.openkm.core.Config" var="Config"/>
+  <u:constantsMap className="com.ezdms.core.Config" var="Config"/>
   <div id="login-container">
     <div class="login-title">
       <img id="login-image" class="img-responsive center-block" src="img/logo_login.gif">
@@ -180,7 +180,7 @@
               <p class="text-danger text-center">
                 Authentication error
                 <c:if
-                    test="${Config.USER_PASSWORD_RESET && Config.PRINCIPAL_ADAPTER == 'com.openkm.principal.DatabasePrincipalAdapter'}">
+                    test="${Config.USER_PASSWORD_RESET && Config.PRINCIPAL_ADAPTER == 'com.ezdms.principal.DatabasePrincipalAdapter'}">
                   (<a href="password_reset.jsp">Forgot your password?</a>)
                 </c:if>
               </p>
@@ -275,7 +275,7 @@
         <div class="form-group form-footer"
              style="border-bottom-left-radius: 10px !important; border-bottom-right-radius: 10px !important;">
           <div class="col-xs-12 text-center">
-            <p>&copy; 2006-2018 OpenKM. All rights reserved.</p>
+            <p>&copy; 2006-2018 ezDMS. All rights reserved.</p>
           </div>
         </div>
       </form>

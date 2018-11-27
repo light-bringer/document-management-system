@@ -1,6 +1,6 @@
-<%@ page import="com.openkm.core.Config" %>
-<%@ page import="com.openkm.extension.servlet.admin.DocumentExpirationServlet" %>
-<%@ page import="com.openkm.servlet.admin.BaseServlet" %>
+<%@ page import="com.ezdms.core.Config" %>
+<%@ page import="com.ezdms.extension.servlet.admin.DocumentExpirationServlet" %>
+<%@ page import="com.ezdms.servlet.admin.BaseServlet" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="isMultipleInstancesAdmin"><%=BaseServlet.isMultipleInstancesAdmin(request)%></c:set>
 <c:set var="isRepositoryNative"><%=Config.REPOSITORY_NATIVE%></c:set>

@@ -10,17 +10,17 @@
   <!-- REST -->
   <jaxrs:server id="rest" address="/rest">
     <jaxrs:serviceBeans>
-      <beans:bean class="com.openkm.rest.endpoint.AuthService"/>
-      <beans:bean class="com.openkm.rest.endpoint.DocumentService"/>
-      <beans:bean class="com.openkm.rest.endpoint.FolderService"/>
-      <beans:bean class="com.openkm.rest.endpoint.MailService"/>
-      <beans:bean class="com.openkm.rest.endpoint.NoteService"/>
-      <beans:bean class="com.openkm.rest.endpoint.PropertyGroupService"/>
-      <beans:bean class="com.openkm.rest.endpoint.SearchService"/>
-      <beans:bean class="com.openkm.rest.endpoint.RepositoryService"/>
-      <beans:bean class="com.openkm.rest.endpoint.PropertyService"/>
-      <beans:bean class="com.openkm.rest.endpoint.TestService"/>
-      <beans:bean class="com.openkm.rest.endpoint.ConversionService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.AuthService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.DocumentService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.FolderService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.MailService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.NoteService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.PropertyGroupService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.SearchService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.RepositoryService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.PropertyService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.TestService"/>
+      <beans:bean class="com.ezdms.rest.endpoint.ConversionService"/>
     </jaxrs:serviceBeans>
     <jaxrs:providers>
       <bean class="org.apache.cxf.jaxrs.provider.json.JSONProvider">

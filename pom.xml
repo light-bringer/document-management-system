@@ -1,38 +1,38 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.openkm</groupId>
-  <artifactId>openkm</artifactId>
+  <groupId>com.ezdms</groupId>
+  <artifactId>ezdms</artifactId>
   <packaging>war</packaging>
   <version>6.3.7-DEV</version>
-  <name>OpenKM Web Application</name>
-  <url>http://www.openkm.com</url>
-  <description>OpenKM is a powerful scalable Document Management System (DMS). OpenKM uses Tomcat + GWT + Hibernate open
+  <name>ezDMS Web Application</name>
+  <url>http://www.ezdms.com</url>
+  <description>ezDMS is a powerful scalable Document Management System (DMS). ezDMS uses Tomcat + GWT + Hibernate open
     source technologies.
   </description>
 
   <scm>
-    <connection>scm:git:git@github.com:openkm/document-management-system.git</connection>
+    <connection>scm:git:git@github.com:ezdms/document-management-system.git</connection>
   </scm>
 
   <licenses>
     <license>
-      <name>OpenKM End User License Agreement</name>
-      <url>https://docs.openkm.com/kcenter/view/licenses</url>
+      <name>ezDMS End User License Agreement</name>
+      <url>https://docs.ezdms.com/kcenter/view/licenses</url>
       <comments>Commercial license</comments>
     </license>
   </licenses>
 
   <organization>
     <name>Open Knowledge Management System S.L.</name>
-    <url>http://www.openkm.com</url>
+    <url>http://www.ezdms.com</url>
   </organization>
 
   <developers>
     <developer>
       <id>monkiki</id>
       <name>Paco Avila</name>
-      <email>pavila@openkm.com</email>
+      <email>pavila@ezdms.com</email>
       <timezone>+1</timezone>
       <roles>
         <role>manager</role>
@@ -42,7 +42,7 @@
     <developer>
       <id>darkman97</id>
       <name>Josep Llort</name>
-      <email>jllort@openkm.com</email>
+      <email>jllort@ezdms.com</email>
       <timezone>+1</timezone>
       <roles>
         <role>developer</role>
@@ -87,9 +87,9 @@
 
   <repositories>
     <repository>
-      <id>openkm.com</id>
-      <name>OpenKM Maven Repository</name>
-      <url>http://maven.openkm.com/maven2</url>
+      <id>ezdms.com</id>
+      <name>ezDMS Maven Repository</name>
+      <url>http://maven.ezdms.com/maven2</url>
     </repository>
   </repositories>
 
@@ -852,7 +852,7 @@
   </dependencies>
 
   <build>
-    <finalName>OpenKM</finalName>
+    <finalName>ezDMS</finalName>
     <outputDirectory>war/WEB-INF/classes</outputDirectory>
     <plugins>
       <plugin>
@@ -869,7 +869,7 @@
         <configuration>
           <runTarget>frontend/index.html</runTarget>
           <modules>
-            <module>com.openkm.frontend.Main</module>
+            <module>com.ezdms.frontend.Main</module>
           </modules>
           <localWorkers>4</localWorkers>
           <extraJvmArgs>-Xms256m -Xmx2048m</extraJvmArgs>

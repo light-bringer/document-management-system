@@ -5,12 +5,12 @@
         version="2.1">
   <tlib-version>1.0</tlib-version>
   <short-name>u</short-name>
-  <uri>http://www.openkm.com/tags/utils</uri>
+  <uri>http://www.ezdms.com/tags/utils</uri>
   
   <!-- Tags -->
   <tag>
     <name>formatSize</name>
-    <tag-class>com.openkm.util.tags.FormatSizeTag</tag-class>
+    <tag-class>com.ezdms.util.tags.FormatSizeTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>size</name>
@@ -20,7 +20,7 @@
   </tag>
   <tag>
     <name>formatMiliSeconds</name>
-    <tag-class>com.openkm.util.tags.FormatMiliSecondsTag</tag-class>
+    <tag-class>com.ezdms.util.tags.FormatMiliSecondsTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>time</name>
@@ -30,7 +30,7 @@
   </tag>
   <tag>
     <name>formatDate</name>
-    <tag-class>com.openkm.util.tags.FormatDateTag</tag-class>
+    <tag-class>com.ezdms.util.tags.FormatDateTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>date</name>
@@ -45,7 +45,7 @@
   </tag>
   <tag>
     <name>getName</name>
-    <tag-class>com.openkm.util.tags.GetNameTag</tag-class>
+    <tag-class>com.ezdms.util.tags.GetNameTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>path</name>
@@ -55,7 +55,7 @@
   </tag>
   <tag>
     <name>getParent</name>
-    <tag-class>com.openkm.util.tags.GetParentTag</tag-class>
+    <tag-class>com.ezdms.util.tags.GetParentTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>path</name>
@@ -65,7 +65,7 @@
   </tag>
   <tag>
     <name>startsWith</name>
-    <tag-class>com.openkm.util.tags.StartsWithTag</tag-class>
+    <tag-class>com.ezdms.util.tags.StartsWithTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>string</name>
@@ -80,7 +80,7 @@
   </tag>
   <tag>
     <name>escapeHtml</name>
-    <tag-class>com.openkm.util.tags.EscapeHtmlTag</tag-class>
+    <tag-class>com.ezdms.util.tags.EscapeHtmlTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>string</name>
@@ -90,7 +90,7 @@
   </tag>
   <tag>
     <name>constantsMap</name>
-    <tag-class>com.openkm.util.tags.ConstantsMapTag</tag-class>
+    <tag-class>com.ezdms.util.tags.ConstantsMapTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
         <name>className</name>
@@ -110,7 +110,7 @@
   </tag>
   <tag>
     <name>automationFormElement</name>
-    <tag-class>com.openkm.util.tags.AutomationFormElementTag</tag-class>
+    <tag-class>com.ezdms.util.tags.AutomationFormElementTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>type</name>
@@ -140,7 +140,7 @@
   </tag>
   <tag>
     <name>message</name>
-    <tag-class>com.openkm.util.tags.MessageTag</tag-class>
+    <tag-class>com.ezdms.util.tags.MessageTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>module</name>
@@ -155,7 +155,7 @@
   </tag>
   <tag>
     <name>configStoredSelect</name>
-    <tag-class>com.openkm.util.tags.ConfigStoredSelectTag</tag-class>
+    <tag-class>com.ezdms.util.tags.ConfigStoredSelectTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>key</name>
@@ -172,22 +172,22 @@
   <!-- Functions -->
   <function>
     <name>contains</name>
-    <function-class>com.openkm.util.tags.UtilFunctions</function-class>
+    <function-class>com.ezdms.util.tags.UtilFunctions</function-class>
     <function-signature>boolean contains(java.util.Collection, java.lang.Object)</function-signature>
   </function>
   <function>
     <name>replace</name>
-    <function-class>com.openkm.util.tags.UtilFunctions</function-class>
+    <function-class>com.ezdms.util.tags.UtilFunctions</function-class>
     <function-signature>java.lang.String replace(java.lang.String, java.lang.String, java.lang.String)</function-signature>
   </function>
   <function>
     <name>isAdmin</name>
-    <function-class>com.openkm.util.tags.UtilFunctions</function-class>
+    <function-class>com.ezdms.util.tags.UtilFunctions</function-class>
     <function-signature>boolean isAdmin()</function-signature>
   </function>
   <function>
     <name>bitwiseAnd</name>
-    <function-class>com.openkm.util.tags.UtilFunctions</function-class>
+    <function-class>com.ezdms.util.tags.UtilFunctions</function-class>
     <function-signature>int bitwiseAnd(int, int)</function-signature>
   </function>
 </taglib>

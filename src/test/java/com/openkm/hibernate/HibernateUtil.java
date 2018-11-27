@@ -1,5 +1,5 @@
 /**
- *  OpenKM, Open Document Management System (http://www.openkm.com)
+ *  ezDMS, Open Document Management System (http://www.ezdms.com)
  *  Copyright (c) 2006-2017  Paco Avila & Josep Llort
  *
  *  No bytes were intentionally harmed during the development of this application.
@@ -19,7 +19,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-package com.openkm.hibernate;
+package com.ezdms.hibernate;
 
 import org.apache.lucene.util.Version;
 import org.hibernate.HibernateException;
@@ -63,7 +63,7 @@ public class HibernateUtil {
 				// Configuration
 				cfg.setProperty("hibernate.dialect", "org.hibernate.dialect.HSQLDialect");
 				cfg.setProperty("hibernate.connection.driver_class", "org.hsqldb.jdbcDriver");
-				cfg.setProperty("hibernate.connection.url", "jdbc:hsqldb:mem:openkm");
+				cfg.setProperty("hibernate.connection.url", "jdbc:hsqldb:mem:ezdms");
 				cfg.setProperty("hibernate.connection.username", "sa");
 				cfg.setProperty("hibernate.connection.password", "");
 				cfg.setProperty("hibernate.connection.pool_size", "1");

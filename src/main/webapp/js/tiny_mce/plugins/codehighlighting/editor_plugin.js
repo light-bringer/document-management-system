@@ -45,8 +45,8 @@
 			return {
 				longname : 'codehighlighting',
 				author : 'Josep Llort Tella',
-				authorurl : 'http://www.openkm.com',
-				infourl : 'http://www.openkm.com',
+				authorurl : 'http://www.ezdms.com',
+				infourl : 'http://www.ezdms.com',
 				version : "1.0"
 			};
 		}

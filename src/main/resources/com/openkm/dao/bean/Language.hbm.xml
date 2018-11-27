@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
                                    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.openkm.dao.bean.Language" table="OKM_LANGUAGE">
+  <class name="com.ezdms.dao.bean.Language" table="OKM_LANGUAGE">
     <cache usage="nonstrict-read-write"/>
     <id name="id" column="LG_ID" length="8"><generator class="assigned"/></id>
     <property name="name" column="LG_NAME" length="64" not-null="true"/>
@@ -12,7 +12,7 @@
     <set name="translations" table="OKM_TRANSLATION" order-by="TR_KEY asc" inverse="true" cascade="all-delete-orphan" lazy="false">
       <cache usage="nonstrict-read-write"/>
       <key column="TR_LANGUAGE"/>
-      <one-to-many class="com.openkm.dao.bean.Translation"/>
+      <one-to-many class="com.ezdms.dao.bean.Translation"/>
     </set>
   </class>
 </hibernate-mapping>

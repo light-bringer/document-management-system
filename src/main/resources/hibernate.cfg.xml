@@ -32,7 +32,7 @@
     <!-- <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property> -->
 
     <!-- DataSource properties (begin) -->
-    <property name="hibernate.connection.datasource">java:/jdbc/OpenKMDS</property>
+    <property name="hibernate.connection.datasource">java:/jdbc/ezDMSDS</property>
     <property name="hibernate.hbm2ddl.auto">create</property>
     <!-- DataSource properties (end) -->
 
@@ -229,33 +229,33 @@
     <mapping resource="org/jbpm/taskmgmt/log/SwimlaneCreateLog.hbm.xml"/>
     <mapping resource="org/jbpm/taskmgmt/log/SwimlaneAssignLog.hbm.xml"/>
     
-    <!-- OpenKM -->
-    <mapping resource="com/openkm/dao/bean/User.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/Role.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/Report.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/Profile.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/CronTab.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/UserConfig.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/MailFilter.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/MailFilterRule.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/MailAccount.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/QueryParams.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/TwitterAccount.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/Dashboard.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/Language.hbm.xml"/>
-    <mapping resource="com/openkm/dao/bean/Translation.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/Extension.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/ProposedSubscriptionSent.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/ProposedSubscriptionReceived.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/ProposedQuerySent.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/ProposedQueryReceived.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/Staple.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/StapleGroup.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/MessageSent.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/MessageReceived.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/Forum.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/ForumTopic.hbm.xml"/>
-    <mapping resource="com/openkm/extension/dao/bean/ForumPost.hbm.xml"/>
+    <!-- ezDMS -->
+    <mapping resource="com/ezdms/dao/bean/User.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/Role.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/Report.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/Profile.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/CronTab.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/UserConfig.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/MailFilter.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/MailFilterRule.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/MailAccount.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/QueryParams.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/TwitterAccount.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/Dashboard.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/Language.hbm.xml"/>
+    <mapping resource="com/ezdms/dao/bean/Translation.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/Extension.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/ProposedSubscriptionSent.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/ProposedSubscriptionReceived.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/ProposedQuerySent.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/ProposedQueryReceived.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/Staple.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/StapleGroup.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/MessageSent.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/MessageReceived.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/Forum.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/ForumTopic.hbm.xml"/>
+    <mapping resource="com/ezdms/extension/dao/bean/ForumPost.hbm.xml"/>
 	
     <!-- ################################### -->
     <!-- # cache settings                  # -->

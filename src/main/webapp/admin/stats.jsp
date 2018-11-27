@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.openkm.servlet.admin.BaseServlet" %>
+<%@ page import="com.ezdms.servlet.admin.BaseServlet" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u" %>
+<%@ taglib uri="http://www.ezdms.com/tags/utils" prefix="u" %>
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,7 @@
   <title>Statistics</title>
 </head>
 <body>
-  <u:constantsMap className="com.openkm.servlet.admin.StatsGraphServlet" var="StatsGraph"/>
+  <u:constantsMap className="com.ezdms.servlet.admin.StatsGraphServlet" var="StatsGraph"/>
   <c:set var="isAdmin"><%=BaseServlet.isAdmin(request)%></c:set>
   <c:choose>
     <c:when test="${isAdmin}">

@@ -2,13 +2,13 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
                                    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.openkm.dao.bean.Profile" table="OKM_PROFILE">
+  <class name="com.ezdms.dao.bean.Profile" table="OKM_PROFILE">
     <id name="id" column="PRF_ID"><generator class="native"/></id>
     <property name="name" column="PRF_NAME" not-null="true"/>
     <property name="active" column="PRF_ACTIVE" type="true_false" not-null="true"/>
 
     <!-- MISC -->
-    <component name="prfMisc" class="com.openkm.dao.bean.ProfileMisc">
+    <component name="prfMisc" class="com.ezdms.dao.bean.ProfileMisc">
       <property name="advancedFilters" type="true_false" not-null="true">
         <column name="PRF_MSC_ADVANCED_FILTERS" default="'F'"/>
       </property>
@@ -51,7 +51,7 @@
     </component>
     
     <!-- CHAT -->
-    <component name="prfChat" class="com.openkm.dao.bean.ProfileChat">
+    <component name="prfChat" class="com.ezdms.dao.bean.ProfileChat">
       <property name="chatEnabled" type="true_false" not-null="true">
         <column name="PRF_CHT_CHAT_EN" default="'F'" />
       </property>
@@ -61,7 +61,7 @@
     </component>
     
     <!-- PAGINATION -->
-    <component name="prfPagination" class="com.openkm.dao.bean.ProfilePagination">
+    <component name="prfPagination" class="com.ezdms.dao.bean.ProfilePagination">
       <property name="paginationEnabled" type="true_false" not-null="true">
         <column name="PRF_PAG_PAGINATION_EN" default="'F'"/>
       </property>
@@ -86,7 +86,7 @@
     </component>
     
     <!-- WIZARD -->
-    <component name="prfWizard" class="com.openkm.dao.bean.ProfileWizard">
+    <component name="prfWizard" class="com.ezdms.dao.bean.ProfileWizard">
       <set name="propertyGroups" table="OKM_PROFILE_WZRD_PROP_GRP" lazy="false">
         <key column="PPG_ID" not-null="true"/>
         <element column="PPG_PROPERTY_GROUP" type="string"/>
@@ -104,7 +104,7 @@
     </component>
     
     <!-- STACK -->
-    <component name="prfStack" class="com.openkm.dao.bean.ProfileStack">
+    <component name="prfStack" class="com.ezdms.dao.bean.ProfileStack">
       <property name="taxonomyVisible" type="true_false" not-null="true">
         <column name="PRF_STCK_TAXONOMY_VIS" default="'T'"/>
       </property>
@@ -132,7 +132,7 @@
     </component>
     
     <!-- TAB -->
-    <component name="prfTab" class="com.openkm.dao.bean.ProfileTab">
+    <component name="prfTab" class="com.ezdms.dao.bean.ProfileTab">
       <property name="defaultTab" not-null="true">
         <column name="PRF_TB_DEFAULT" default="'desktop'"/>
       </property>
@@ -150,7 +150,7 @@
       </property>
       
       <!-- TAB DOCUMENT -->
-      <component name="prfDocument" class="com.openkm.dao.bean.ProfileTabDocument">
+      <component name="prfDocument" class="com.ezdms.dao.bean.ProfileTabDocument">
         <property name="propertiesVisible" type="true_false" not-null="true">
           <column name="PRF_TB_DOC_PROPS_VIS" default="'T'"/>
         </property>
@@ -175,7 +175,7 @@
       </component>
 
       <!-- TAB FOLDER -->
-      <component name="prfFolder" class="com.openkm.dao.bean.ProfileTabFolder">
+      <component name="prfFolder" class="com.ezdms.dao.bean.ProfileTabFolder">
         <property name="propertiesVisible" type="true_false" not-null="true">
           <column name="PRF_TB_FLD_PROPS_VIS" default="'T'"/>
         </property>
@@ -188,7 +188,7 @@
       </component>
 
       <!-- TAB MAIL -->
-      <component name="prfMail" class="com.openkm.dao.bean.ProfileTabMail">
+      <component name="prfMail" class="com.ezdms.dao.bean.ProfileTabMail">
         <property name="propertiesVisible" type="true_false" not-null="true">
           <column name="PRF_TB_ML_PROPS_VIS" default="'T'"/>
         </property>
@@ -205,7 +205,7 @@
     </component>
   
     <!-- DASHBOARD -->
-	<component name="prfDashboard" class="com.openkm.dao.bean.ProfileDashboard">
+	<component name="prfDashboard" class="com.ezdms.dao.bean.ProfileDashboard">
       <property name="userVisible" type="true_false" not-null="true">
 	    <column name="PRF_DB_USER_VIS" default="'T'"/>
 	  </property>
@@ -227,7 +227,7 @@
 	</component>
 	
 	<!-- MENU -->
-	<component name="prfMenu" class="com.openkm.dao.bean.ProfileMenu">
+	<component name="prfMenu" class="com.ezdms.dao.bean.ProfileMenu">
       <property name="fileVisible" type="true_false" not-null="true">
         <column name="PRF_MN_FILE_VIS" default="'T'"/>
       </property>
@@ -248,7 +248,7 @@
       </property>
 
       <!-- MENU FILE -->
-	  <component name="prfFile" class="com.openkm.dao.bean.ProfileMenuFile">
+	  <component name="prfFile" class="com.ezdms.dao.bean.ProfileMenuFile">
 	    <property name="createFolderVisible" type="true_false" not-null="true">
 	      <column name="PRF_MN_FI_CREATE_FLD_VIS" default="'T'"/>
 	    </property>
@@ -306,7 +306,7 @@
       </component>
 
       <!-- MENU EDIT -->
-      <component name="prfEdit" class="com.openkm.dao.bean.ProfileMenuEdit">
+      <component name="prfEdit" class="com.ezdms.dao.bean.ProfileMenuEdit">
 	    <property name="lockVisible" type="true_false" not-null="true">
 	      <column name="PRF_MN_ED_LOCK_VIS" default="'T'"/>
 	    </property>
@@ -373,7 +373,7 @@
       </component>
       
       <!-- MENU BOOKMARK -->
-      <component name="prfBookmark" class="com.openkm.dao.bean.ProfileMenuBookmark">
+      <component name="prfBookmark" class="com.ezdms.dao.bean.ProfileMenuBookmark">
       	<property name="manageBookmarksVisible" type="true_false" not-null="true">
           <column name="PRF_MN_BM_MNG_BOOKMARKS_VIS" default="'T'"/>
 	    </property>
@@ -389,7 +389,7 @@
       </component>
       
       <!-- MENU TOOL -->
-      <component name="prfTool" class="com.openkm.dao.bean.ProfileMenuTool">
+      <component name="prfTool" class="com.ezdms.dao.bean.ProfileMenuTool">
         <property name="languagesVisible" type="true_false" not-null="true">
           <column name="PRF_MN_TL_LANGS_VIS" default="'T'"/>
 	    </property>
@@ -414,7 +414,7 @@
       </component>
       
       <!-- MENU HELP -->
-      <component name="prfHelp" class="com.openkm.dao.bean.ProfileMenuHelp">
+      <component name="prfHelp" class="com.ezdms.dao.bean.ProfileMenuHelp">
 	    <property name="documentationVisible" type="true_false" not-null="true">
 	      <column name="PRF_MN_HLP_DOC_VIS" default="'T'"/>
 	    </property>
@@ -440,7 +440,7 @@
     </component>
     
     <!-- TOOLBAR BUTTONS -->
-    <component name="prfToolbar" class="com.openkm.dao.bean.ProfileToolbar">
+    <component name="prfToolbar" class="com.ezdms.dao.bean.ProfileToolbar">
 	  <property name="createFolderVisible" type="true_false" not-null="true">
 	    <column name="PRF_TB_CREATE_FLD_VIS" default="'T'"/>
 	  </property>
@@ -513,7 +513,7 @@
     </component>
     
     <!-- FILE BROWSER -->
-    <component name="prfFileBrowser" class="com.openkm.dao.bean.ProfileFileBrowser">
+    <component name="prfFileBrowser" class="com.ezdms.dao.bean.ProfileFileBrowser">
 	  <property name="statusVisible" type="true_false" not-null="true">
 	    <column name="PRF_FB_STATUS_VIS" default="'T'"/>
 	  </property>

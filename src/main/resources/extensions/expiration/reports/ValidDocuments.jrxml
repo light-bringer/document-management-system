@@ -11,16 +11,16 @@
 	<parameter name="host" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[import java.util.Calendar;
-import com.openkm.dao.ConfigDAO;
-import com.openkm.util.ISO8601;
+import com.ezdms.dao.ConfigDAO;
+import com.ezdms.util.ISO8601;
 import java.text.SimpleDateFormat;
-import com.openkm.api.OKMSearch;
-import com.openkm.api.OKMPropertyGroup;
-import com.openkm.bean.QueryResult;
-import com.openkm.bean.form.FormElement;
-import com.openkm.dao.bean.QueryParams;
-import com.openkm.bean.Document;
-import com.openkm.bean.form.Input;
+import com.ezdms.api.OKMSearch;
+import com.ezdms.api.OKMPropertyGroup;
+import com.ezdms.bean.QueryResult;
+import com.ezdms.bean.form.FormElement;
+import com.ezdms.dao.bean.QueryParams;
+import com.ezdms.bean.Document;
+import com.ezdms.bean.form.Input;
 
 String datePattern = ConfigDAO.getString("expiration.date.pattern", "dd-MM-yyyy HH:mm:ss");
 SimpleDateFormat sf = new SimpleDateFormat(datePattern);

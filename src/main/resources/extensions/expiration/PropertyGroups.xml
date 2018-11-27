@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE property-groups PUBLIC "-//OpenKM//DTD Property Groups 2.1//EN"
-                                 "http://www.openkm.com/dtd/property-groups-2.1.dtd">
+<!DOCTYPE property-groups PUBLIC "-//ezDMS//DTD Property Groups 2.1//EN"
+                                 "http://www.ezdms.com/dtd/property-groups-2.1.dtd">
 <property-groups>
 	<property-group label="Expiration" name="okg:expiration">
            <input label="Expiration date" name="okp:expiration.date" type="date">

@@ -13,7 +13,7 @@
   <task:scheduled-tasks scheduler="taskScheduler">
     <task:scheduled ref="textExtractorWorker" method="work" fixed-delay="60000"/>
   </task:scheduled-tasks>
-  <beans:bean id="textExtractorWorker" class="com.openkm.extractor.TextExtractorWorker" />
+  <beans:bean id="textExtractorWorker" class="com.ezdms.extractor.TextExtractorWorker" />
   -->
   
   <!-- Security configuration -->

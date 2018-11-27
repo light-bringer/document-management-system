@@ -83,7 +83,7 @@
 
     -->
 
-    <cache name="com.openkm.cache.dashboardUserMails"
+    <cache name="com.ezdms.cache.dashboardUserMails"
            maxElementsInMemory="1000"
            timeToIdleSeconds="120"
            timeToLiveSeconds="120"
@@ -91,7 +91,7 @@
            eternal="false"
            />
 
-    <cache name="com.openkm.cache.dashboardUserDocuments"
+    <cache name="com.ezdms.cache.dashboardUserDocuments"
            maxElementsInMemory="1000"
            timeToIdleSeconds="120"
            timeToLiveSeconds="120"
@@ -99,7 +99,7 @@
            eternal="false"
            />
 
-    <cache name="com.openkm.cache.dashboardTopDocuments"
+    <cache name="com.ezdms.cache.dashboardTopDocuments"
            maxElementsInMemory="1000"
            timeToIdleSeconds="120"
            timeToLiveSeconds="120"
@@ -108,7 +108,7 @@
            />
 
     <!-- Search -->
-    <cache name="com.openkm.cache.searchFoldersInDepth"
+    <cache name="com.ezdms.cache.searchFoldersInDepth"
            maxElementsInMemory="1000"
            timeToIdleSeconds="300"
            timeToLiveSeconds="0"
@@ -117,7 +117,7 @@
            />
 
     <!-- LDAP -->
-    <cache name="com.openkm.cache.ldapPrincipalAdapter.general"
+    <cache name="com.ezdms.cache.ldapPrincipalAdapter.general"
            maxElementsInMemory="1000"
            timeToIdleSeconds="300"
            timeToLiveSeconds="0"
@@ -125,7 +125,7 @@
            eternal="false"
            />
 
-    <cache name="com.openkm.cache.ldapPrincipalAdapter.name"
+    <cache name="com.ezdms.cache.ldapPrincipalAdapter.name"
            maxElementsInMemory="1000"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="0"
@@ -134,7 +134,7 @@
            />
 
     <!-- Nodes -->
-    <cache name="com.openkm.dao.bean.NodeBase"
+    <cache name="com.ezdms.dao.bean.NodeBase"
            maxElementsInMemory="50000"
            timeToIdleSeconds="120"
            timeToLiveSeconds="120"

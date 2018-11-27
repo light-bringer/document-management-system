@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.openkm.core.Config" %>
+<%@ page import="com.ezdms.core.Config" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u" %>
+<%@ taglib uri="http://www.ezdms.com/tags/utils" prefix="u" %>
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/bootstrap/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/font-awesome/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="<%=request.getContextPath() %>/css/login.css" type="text/css" />
-  <title>OpenKM Mobile</title>
+  <title>ezDMS Mobile</title>
 </head>
 <body>
 <div id="login-background"></div>
-<u:constantsMap className="com.openkm.core.Config" var="Config"/>
+<u:constantsMap className="com.ezdms.core.Config" var="Config"/>
   <div id="login-container">
-    <div class="openkm-version" style="padding: 5px 20px; color: #404040; font-wight:bold; background:#fed400; width:200px; position:fixed; top:0px; left:0px; z-index:1;">
+    <div class="ezdms-version" style="padding: 5px 20px; color: #404040; font-wight:bold; background:#fed400; width:200px; position:fixed; top:0px; left:0px; z-index:1;">
       <strong>Community Version</strong>
     </div>
             <div class="login-title">
@@ -37,7 +37,7 @@
                       <div id="col-xs-12">                                    
                     <p class="text-danger text-center">
                         Authentication error
-                      <c:if test="${Config.USER_PASSWORD_RESET && Config.PRINCIPAL_ADAPTER == 'com.openkm.principal.DatabasePrincipalAdapter'}">
+                      <c:if test="${Config.USER_PASSWORD_RESET && Config.PRINCIPAL_ADAPTER == 'com.ezdms.principal.DatabasePrincipalAdapter'}">
                           (<a href="password_reset.jsp">Forgot your password?</a>)
                       </c:if>
                     </p>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="form-group form-footer" style="border-bottom-left-radius: 10px !important; border-bottom-right-radius: 10px !important;">
                       <div class="col-xs-12 text-center">
-                            <p>OpenKM Mobile</p>
+                            <p>ezDMS Mobile</p>
                         </div>                      
                     </div>
                 </form>

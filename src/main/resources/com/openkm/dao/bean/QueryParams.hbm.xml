@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
                                    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.openkm.dao.bean.QueryParams" table="OKM_QUERY_PARAMS">
+  <class name="com.ezdms.dao.bean.QueryParams" table="OKM_QUERY_PARAMS">
     <id name="id" column="QP_ID"><generator class="native"/></id>
     <property name="queryName" column="QP_QUERY_NAME" not-null="true"/>
     <property name="user" column="QP_USER" not-null="true" length="64"/>
@@ -38,11 +38,11 @@
     </set>
     <set name="proposedSent" table="OKM_PROP_QUERY_SENT" order-by="PQS_ID asc" cascade="all-delete-orphan" lazy="false">
       <key column="PQS_QUERY"/>
-      <one-to-many class="com.openkm.extension.dao.bean.ProposedQuerySent"/>
+      <one-to-many class="com.ezdms.extension.dao.bean.ProposedQuerySent"/>
     </set>
     <set name="proposedReceived" table="OKM_PROP_QUERY_RECEIVED" order-by="PQR_ID asc" cascade="all-delete-orphan" lazy="false">
       <key column="PQR_QUERY"/>
-      <one-to-many class="com.openkm.extension.dao.bean.ProposedQueryReceived"/>
+      <one-to-many class="com.ezdms.extension.dao.bean.ProposedQueryReceived"/>
     </set>
   </class>
 </hibernate-mapping>

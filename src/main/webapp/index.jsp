@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page errorPage="general-error.jsp" %>
-<%@ page import="com.openkm.core.Config" %>
-<%@ page import="com.openkm.util.FormatUtil" %>
-<%@ page import="com.openkm.util.WebUtils" %>
+<%@ page import="com.ezdms.core.Config" %>
+<%@ page import="com.ezdms.util.FormatUtil" %>
+<%@ page import="com.ezdms.util.WebUtils" %>
 <%@ page import="java.net.URLEncoder" %>
 <%
 	request.setCharacterEncoding("UTF-8");

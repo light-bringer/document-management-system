@@ -14,8 +14,8 @@
 import javax.jcr.util.*;
 import org.apache.jackrabbit.*;
 import org.apache.jackrabbit.api.*;
-import com.openkm.bean.*;
-import com.openkm.module.direct.*;
+import com.ezdms.bean.*;
+import com.ezdms.module.direct.*;
 
 nodeIterator(Node node) {
   if (node.isNodeType(Document.TYPE)) {

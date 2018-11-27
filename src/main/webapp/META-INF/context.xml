@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!-- 
-  Original: <Context path="/OpenKM" docBase="OpenKM" reloadable="true" crossContext="true" allowLinking="true">
-  Actual: <Context path="/OpenKM" reloadable="false" crossContext="true" allowLinking="true">
+  Original: <Context path="/ezDMS" docBase="ezDMS" reloadable="true" crossContext="true" allowLinking="true">
+  Actual: <Context path="/ezDMS" reloadable="false" crossContext="true" allowLinking="true">
   Reason: http://old.nabble.com/Tomcat-failing-to-process-JAR%27s-within-web-app-td31070894.html
 -->
-<Context path="/OpenKM" reloadable="false" crossContext="true" allowLinking="true">
+<Context path="/ezDMS" reloadable="false" crossContext="true" allowLinking="true">
 
     <!-- maxActive: Maximum number of dB connections in pool. Make sure you
          configure your mysqld max_connections large enough to handle
@@ -31,26 +31,26 @@
     <!-- url: The JDBC connection url for connecting to your MySQL dB.
          -->
   <!--
-  <Resource name="jdbc/OpenKMDS" auth="Container" type="javax.sql.DataSource"
+  <Resource name="jdbc/ezDMSDS" auth="Container" type="javax.sql.DataSource"
             maxActive="100" maxIdle="30" maxWait="10000"
             username="sa" password="" driverClassName="org.hsqldb.jdbcDriver"
             url="jdbc:hsqldb:${catalina.base}/OPENKM"/>
   -->
   <!--
-  <Resource name="jdbc/OpenKMDS" auth="Container" type="javax.sql.DataSource"
+  <Resource name="jdbc/ezDMSDS" auth="Container" type="javax.sql.DataSource"
             maxActive="100" maxIdle="30" maxWait="10000"
-            username="openkm" password="openkm" driverClassName="com.mysql.jdbc.Driver"
+            username="ezdms" password="ezdms" driverClassName="com.mysql.jdbc.Driver"
             url="jdbc:mysql://localhost:3306/okm_app?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF8"/>
   -->
   <!--
-  <Resource name="jdbc/OpenKMDS" auth="Container" type="javax.sql.DataSource"
+  <Resource name="jdbc/ezDMSDS" auth="Container" type="javax.sql.DataSource"
             maxActive="100" maxIdle="30" maxWait="10000"
             username="okm60" password="okm60" driverClassName="oracle.jdbc.driver.OracleDriver"
             url="jdbc:oracle:thin:@localhost:1521:XE"/>
   -->
   <!--      
-  <Resource name="mail/OpenKM" auth="Container" type="javax.mail.Session"
-            mail.smtp.host="localhost" mail.from="testing@openkm.com"/>
+  <Resource name="mail/ezDMS" auth="Container" type="javax.mail.Session"
+            mail.smtp.host="localhost" mail.from="testing@ezdms.com"/>
   -->
   <!--
   <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
@@ -58,8 +58,8 @@
   -->
   <!--
   <Realm className="org.apache.catalina.realm.JAASRealm" 
-         appName="OpenKM" 
-         userClassNames="com.openkm.jaas.User" 
-         roleClassNames="com.openkm.jaas.Role" debug="true" />
+         appName="ezDMS" 
+         userClassNames="com.ezdms.jaas.User" 
+         roleClassNames="com.ezdms.jaas.Role" debug="true" />
   -->
 </Context>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.openkm.servlet.admin.BaseServlet"%>
+<%@ page import="com.ezdms.servlet.admin.BaseServlet"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u"%>
+<%@ taglib uri="http://www.ezdms.com/tags/utils" prefix="u"%>
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,7 @@
 </head>
 <body>
   <c:set var="isAdmin"><%=BaseServlet.isAdmin(request)%></c:set>
-  <u:constantsMap className="com.openkm.core.Config" var="Config" />
+  <u:constantsMap className="com.ezdms.core.Config" var="Config" />
   <c:choose>
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">

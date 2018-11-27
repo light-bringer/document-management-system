@@ -1,6 +1,6 @@
-<okm = 'http://www.openkm.org/1.0'>
-<okg = 'http://www.openkm.org/group/1.0'>
-<okp = 'http://www.openkm.org/group/property/1.0'>
+<okm = 'http://www.ezdms.org/1.0'>
+<okg = 'http://www.ezdms.org/group/1.0'>
+<okp = 'http://www.ezdms.org/group/property/1.0'>
 
 [okg:expiration] mixin
 - okp:expiration.date (string) = '' autocreated

@@ -19,8 +19,8 @@
   <jaxws:endpoint id="cmisAclService" implementor="org.apache.chemistry.opencmis.server.impl.webservices.AclService" address="/cmis/ACLService"/>
 
   <!-- OpenCMIS -->
-  <beans:bean id="CmisLifecycleBean" class="com.openkm.cmis.CmisLifecycleBean">
+  <beans:bean id="CmisLifecycleBean" class="com.ezdms.cmis.CmisLifecycleBean">
     <beans:property name="cmisServiceFactory" ref="CmisServiceFactory"/>
   </beans:bean>
-  <beans:bean id="CmisServiceFactory" class="com.openkm.cmis.CmisServiceFactory"/>
+  <beans:bean id="CmisServiceFactory" class="com.ezdms.cmis.CmisServiceFactory"/>
 </beans:beans>

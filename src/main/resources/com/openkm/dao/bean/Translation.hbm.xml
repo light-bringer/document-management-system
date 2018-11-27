@@ -2,10 +2,10 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
                                    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.openkm.dao.bean.Translation" table="OKM_TRANSLATION">
+  <class name="com.ezdms.dao.bean.Translation" table="OKM_TRANSLATION">
     <cache usage="nonstrict-read-write"/>
     <!-- Hibernate In Action 8.3.1 -->
-    <composite-id name="translationId" class="com.openkm.dao.bean.TranslationId">
+    <composite-id name="translationId" class="com.ezdms.dao.bean.TranslationId">
       <key-property name="module" column="TR_MODULE" length="64"/>
       <key-property name="key" column="TR_KEY" length="127"/>
       <key-property name="language" column="TR_LANGUAGE" length="8" />

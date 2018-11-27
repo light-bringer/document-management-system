@@ -3175,10 +3175,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 /*
 =================================================================
-OpenKM RSS
+ezDMS RSS
 =================================================================
 */
-.openkm-news {
+.ezdms-news {
 	width:200px; 
 	position:fixed; 
 	top:0px; 
@@ -3186,21 +3186,21 @@ OpenKM RSS
 	z-index:1;
 }
 
-.openkm-version {
+.ezdms-version {
 	padding: 5px 20px; 
 	color: #404040; 
 	font-weight: bold; 
 	background:#fed400;
 }
 
-.openkm-sticker {
+.ezdms-sticker {
 	position:absolute; 
 	top: 5px; 
 	right: 5px; 
 	z-index:2;
 }
 
-.openkm-sticker img {
+.ezdms-sticker img {
 	padding: 0px 5px;
 }
 

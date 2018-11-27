@@ -13,7 +13,7 @@
 		<![CDATA[import javax.jcr.*;
 import javax.jcr.query.*;
 import org.apache.jackrabbit.*;
-import com.openkm.module.direct.*;
+import com.ezdms.module.direct.*;
 
 List al = new ArrayList();
 String statement = "/jcr:root/okm:root//element(*, mix:notification)/@okm:subscriptors";

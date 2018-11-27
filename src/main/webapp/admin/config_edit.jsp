@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.openkm.servlet.admin.BaseServlet" %>
+<%@ page import="com.ezdms.servlet.admin.BaseServlet" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u" %>
+<%@ taglib uri="http://www.ezdms.com/tags/utils" prefix="u" %>
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@
   <script type="text/javascript" src="../js/tiny_mce/tiny_mce.js"></script>
   <script type="text/javascript" src="../js/tiny_mce/jquery.tinymce.js"></script>
   <title>Configuration</title>
-  <u:constantsMap className="com.openkm.dao.bean.Config" var="Config"/>
+  <u:constantsMap className="com.ezdms.dao.bean.Config" var="Config"/>
   <script type="text/javascript">
     $(document).ready(function() {
       $('select#cfg_type').chosen({disable_search_threshold: 10});
