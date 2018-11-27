@@ -22,6 +22,9 @@ hs_err_pid*
 .idea/
 *.iml
 
+# VsCode
+.vscode/
+
 # Generated automatically
 src/main/resources/version.properties
 gwt-unitCache/
