@@ -89,7 +89,7 @@
     <repository>
       <id>ezdms.com</id>
       <name>ezDMS Maven Repository</name>
-      <url>http://maven.ezdms.com/maven2</url>
+      <url>http://maven.openkms.com/maven2</url>
     </repository>
   </repositories>
 
